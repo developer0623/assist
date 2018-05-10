@@ -1,0 +1,97 @@
+<template name="notifications">	
+	<div class="row  border-bottom white-bg dashboard-header">
+		<h2>Notifications</h2>
+	</div>
+	<div class="wrapper wrapper-content animated fadeInRight notification-list-container">		
+		<div class="row">
+            <div class="col-lg-12">
+    			<div class="ibox float-e-margins">
+                    <div class="ibox-content" style="padding: 0px">
+                    	<div style="padding: 24px 0px">
+							<a href="{{pathFor route='notificationAccepted'}}">
+								<div class="notification-item clearfix">
+									<div style="float: left;"><img src="/img/landing/avatar1.jpg" /></div>
+									<div class="notification-date text-right">03/28/2016</div>
+									<div style="margin-left: 100px">
+										<div class="notification-name">Amelia Dennis</div>
+										<div class="notification-type">Appointment Accepted</div>
+									</div>
+									
+								</div>
+							</a>
+							<div data-toggle="modal" data-target="#findNewModal" class="notification-item clearfix">
+								<div style="float: left;"><img src="/img/landing/avatar2.jpg" /></div>
+								<div class="notification-date text-right">02/24/2016</div>
+								<div style="margin-left: 100px">
+									<div class="notification-name">Maude Floyd</div>
+									<div class="notification-type">Appointment Cancelled</div>
+								</div>
+							</div>
+
+							<a href="{{pathFor route='notificationAccepted'}}">
+							<div class="notification-item clearfix">
+								<div style="float: left;"><img src="/img/landing/avatar3.jpg" /></div>
+								<div class="notification-date text-right">01/06/2016</div>
+								<div style="margin-left: 100px">
+									<div class="notification-name">Alta Wood</div>
+									<div class="notification-type">Appointment Accepted</div>
+								</div>
+								
+							</div>
+							</a>
+
+							<div data-toggle="modal" data-target="#runningModal" class="notification-item clearfix">
+								<div style="float: left;"><img src="/img/landing/avatar4.jpg" /></div>
+								<div class="notification-date text-right">12/06/2016</div>
+								<div style="margin-left: 100px">
+									<div class="notification-name">Violet Alexander</div>
+									<div class="notification-type">Is Running Late</div>
+								</div>								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div id="runningModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" style="width: 500px">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body" style="padding-top: 0px">
+                    <h2 style="color: #000">We're Running Late</h2>
+                    <div>Violet running about 5 minutes late to your appointment.</div>
+                </div>
+                <div class="bg-light-blue btn-running-okay" data-dismiss="modal">OKAY</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="findNewModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" style="width: 500px">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+            	<div class="modal-header">
+            		<div class="notification-item">
+						<div style="float: left"><img src="/img/landing/avatar1.jpg" /></div>
+						<div style="margin-left: 100px">
+							<div class="notification-name">Amelia Dennis</div>
+							<div style="font-size: 14px;color: #333;padding-top: 2px;">Wednesday, 3/28/2016<br />9:00 am - 11:00 am</div>
+						</div>
+					</div>
+            	</div>
+                <div class="modal-body">
+                    <div><b>Maude unfortunately had to cancel this appointment. Find someone new?</b></div>
+                </div>
+                <div class="btn-find-new-no" data-dismiss="modal">NO</div>
+                <div class="bg-light-blue btn-find-new-yes" data-dismiss="modal">YES</div>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+    </div>
+</template>

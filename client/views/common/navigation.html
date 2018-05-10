@@ -1,0 +1,77 @@
+<template name="navigation">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+
+            <!-- Close canvas menu used only on OffCanvas page -->
+            <!-- You can remove this tag if you dont use offCanvas menu -->
+            <a class="close-canvas-menu"><i class="fa fa-times"></i></a>
+            <!-- End offCanvas menu toggle -->
+
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                        <span><img alt="image" src="/logo.png" width="170px" /></span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold text-white">{{username}}<br />{{organization}}</strong>
+                             </span> <!--<span class="text-muted text-xs block">Menu <b class="caret"></b></span>--> </span> </a>
+                        <!--<ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="{{pathFor route='profile'}}">Profile</a></li>
+                            <li><a href="{{pathFor route='login'}}">Logout</a></li>
+                        </ul>-->
+                    </div>
+                    <div class="logo-element">
+                        <img src="icon.png" width="30%" />
+                    </div>
+                </li>
+                <li class="{{isActiveRoute regex='dashboard'}}">
+                    <a href="{{pathFor route='dashboard'}}"><i class="fa fa-th-large"></i> <span class="nav-label" data-i18n="nav.dashboard">Dashboard</span></a>
+                </li>
+                <li class="{{isActiveRoute regex='clients'}}">
+                    <a href="{{pathFor route='clients'}}"><i class="fa fa-users"></i> <span class="nav-label">Clients</span></a>
+                </li>
+                <li class="{{isActiveRoute regex='bookings'}}">
+                    <a href="{{pathFor route='bookings'}}"><i class="fa fa-ticket"></i> <span class="nav-label">Bookings</span></a>
+                </li>
+                <li class="{{isActiveRoute regex='notifications'}}">
+                    <a href="{{pathFor route='notifications'}}"><i class="fa fa-bell"></i> <span class="nav-label">Notifications</span></a>
+                </li>
+                <li class="{{isActiveRoute regex='messages|messageView'}}">
+                    <a href="{{pathFor route='messages'}}"><i class="fa fa-envelope"></i> <span class="nav-label">Messages</span></a>
+                </li>
+                <li class="{{isActiveRoute regex='accounts'}}">
+                    <a href="{{pathFor route='accounts'}}"><i class="fa fa-usd" style="margin-left: 3px"></i> <span class="nav-label">Accounts</span></a>
+                </li>
+                <li class="{{isActiveRoute regex='settings'}}">
+                    <a href="{{pathFor route='settings'}}"><i class="fa fa-gear"></i> <span class="nav-label">Settings</span></a>
+                </li>
+                <!--<li class="{{isActiveRoute regex='markdown|formBasic|formAdvanced|formWizard|formUpload|textEditor'}}">
+                    <a href="#"><i class="fa fa-edit"></i> <span class="nav-label" data-i18n="nav.forms">Forms</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse {{isActiveRoute regex='markdown|formBasic|formAdvanced|formWizard|formUpload|textEditor' className='in'}}">
+                        <li class="{{isActiveRoute regex='formBasic'}}"><a href="{{pathFor route='formBasic'}}">Basic form</a></li>
+                        <li class="{{isActiveRoute regex='formAdvanced'}}"><a href="{{pathFor route='formAdvanced'}}">Advanced Plugins</a></li>
+                        <li class="{{isActiveRoute regex='formWizard'}}"><a href="{{pathFor route='formWizard'}}">Wizard</a></li>
+                        <li class="{{isActiveRoute regex='formUpload'}}"><a href="{{pathFor route='formUpload'}}">File Upload</a></li>
+                        <li class="{{isActiveRoute regex='textEditor'}}"><a href="{{pathFor route='textEditor'}}">Text Editor</a></li>
+                        <li class="{{isActiveRoute regex='markdown'}}"><a href="{{pathFor route='markdown'}}">Markdown</a></li>
+                    </ul>
+                </li>
+                
+                <li class="{{isActiveRoute regex='searchResult|invoice|emptyPage'}}">
+                    <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label" data-i18n="nav.otherpages">Other Pages</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse {{isActiveRoute regex='searchResult|invoice|emptyPage' className='in'}}">
+                        <li><a href="{{pathFor route='lockScreen'}}">Lockscreen</a></li>
+                        <li class="{{isActiveRoute regex='invoice'}}"><a href="{{pathFor route='invoice'}}">Invoice</a></li>
+                        <li><a href="{{pathFor route='login'}}">Login</a></li>
+                        <li><a href="{{pathFor route='loginTwo'}}">Login v.2</a></li>
+                        <li><a href="{{pathFor route='forgotPassword'}}">Forgot password</a></li>
+                        <li><a href="{{pathFor route='register'}}">Register</a></li>
+                        <li><a href="{{pathFor route='errorOne'}}">404 Page</a></li>
+                        <li><a href="{{pathFor route='errorTwo'}}">500 Page</a></li>
+                        <li class="{{isActiveRoute regex='emptyPage'}}"><a href="{{pathFor route='emptyPage'}}">Empty page</a></li>
+                    </ul>
+                </li>-->
+            </ul>
+
+        </div>
+    </nav>
+</template>

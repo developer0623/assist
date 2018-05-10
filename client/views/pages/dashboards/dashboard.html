@@ -1,0 +1,217 @@
+<template name="dashboard">
+    <div class="row  border-bottom white-bg dashboard-header">
+        <h2>Dashboard</h2>
+    </div>
+    <div class="wrapper wrapper-content animated fadeInRight">
+		<div class="row">
+			<div class="col-sm-7">
+				<div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Upcoming bookings</h5>
+
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#">Config option 1</a>
+                                </li>
+                                <li><a href="#">Config option 2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="footable table table-stripped" data-page-size="8" data-filter=#filter>
+                            <thead>
+                            <tr>
+                                <th>Date/Time</th>
+                                <th>Firstname</th>
+                                <th>Surname</th>                                
+                                <th data-hide="phone">Care Giver</th>                                
+                                <th class="text-center">Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            	<tr class="trBooking" id="trBooking1">
+                                    <td>03-05-2016 03:20:00</td>
+                            		<td>Erik</td>
+                            		<td>Clasie</td>
+                            		<td>Dirk</td>                                    
+                            		<td class="text-center">
+                            			<a class="action-link" href="/bookingView/1"><span class="fa fa-eye light-blue"></span></a>
+                                        <a class="action-link" href="#"><span class="fa fa-envelope light-blue"></span></a>
+                                        <a class="action-link" href="#"><span class="fa fa-close dark-red"></span></a>
+                            		</td>
+                            	</tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+			</div>
+			<div class="col-sm-5">
+				<div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Messages</h5>
+
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#">Config option 1</a>
+                                </li>
+                                <li><a href="#">Config option 2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="footable table table-stripped" data-page-size="8" data-filter=#filter>
+                            <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Sender</th>
+                                <th data-hide="phone">Message</th>
+                                <th class="text-center">Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="trMessage" id="trMessage1">
+                                    <td>04-03-2016</td>
+                            		<td>Erik Clasie</td>
+                            		<td>Lorem ipsum dolor noretek imit set</td>
+                                    <td class="text-center"><a class="action-link" href="/messageView/1"><span class="fa fa-eye light-blue"></span></a></td>
+                            	</tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<div class="row">
+
+			<div class="col-sm-6">
+				<div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Notifications</h5>
+
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#">Config option 1</a>
+                                </li>
+                                <li><a href="#">Config option 2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="footable table table-stripped" data-page-size="8" data-filter=#filter>
+                            <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Patient</th>
+                                <th>Date</th>
+                                <th class="text-center">Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            	<tr class="trNotification" id="trNotificationAcc1">
+                            		<td>Accepted</td>
+                                    <td>Amelia Dennis</td>
+                            		<td>03/28/2016</td>
+                                    <td class="text-center"><a class="action-link" href="/notificationAccepted"><span class="fa fa-eye light-blue"></span></a></td>
+
+                            	</tr>
+                            	<tr class="trNotification" id="trNotificationCan1">
+                            		<td>Cancelled</td>
+                                    <td>Willem Daniel</td>
+                            		<td>06-04-2016</td>
+                                    <td class="text-center"><a class="action-link" href="/notifications"><span class="fa fa-eye light-blue"></span></a></td>
+                            	</tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+			<div class="col-sm-6">
+				<div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>Accounts</h5>
+
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#">Config option 1</a>
+                                </li>
+                                <li><a href="#">Config option 2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="footable table table-stripped" data-page-size="8" data-filter=#filter>
+                            <thead>
+                            <tr>
+                                <th data-hide="phone">Invoice #</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th class="text-center">Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            	<tr class="trAccount" id="trAccount1">
+                                    <td>1</td>
+                                    <td>$300</td>
+                                    <td>Current</td>
+                                    <td class="text-center">
+                                        <a class="action-link" href="/accountView/1"><span class="fa fa-eye light-blue"></span></a>
+                                        <a class="action-link" href="#"><span class="fa fa-usd light-blue"></span></a>
+                                    </td>
+                                </tr>
+                                <tr class="trAccount" id="trAccount2">
+                                    <td>2</td>
+                                    <td>$700</td>
+                                    <td>Overdue</td>
+                                    <td class="text-center">
+                                        <a class="action-link" href="/accountView/2"><span class="fa fa-eye light-blue"></span></a>
+                                        <a class="action-link" href="#"><span class="fa fa-usd light-blue"></span></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+</template>

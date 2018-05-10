@@ -1,0 +1,66 @@
+<template name="searchCareGiver">
+    <div class="map-container" style="height: 500px">
+		{{> googleMap name="exampleMap" options=exampleMapOptions}}
+	</div>
+
+	<div class="book-service-date-container">
+        <div class="col-sm-5">
+			<div class="book-service-date input-group date">
+				<span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control">
+			</div>
+		</div>
+
+		<div class="col-sm-3">
+			<div class="input-group clockpicker" data-autoclose="true">
+                <input type="text" class="form-control" value="09:30" >
+                <span class="input-group-addon">
+                    <span class="fa fa-clock-o"></span>
+                </span>
+            </div>
+		</div>
+
+		<div class="col-sm-3">
+			<select class="form-control">
+				<option value="0">Duration</option>
+				<option value="1" selected>1 hour</option>
+				<option value="2">2 hours</option>
+				<option value="3">3 hours</option>
+				<option value="4">4 hours</option>
+			</select>
+		</div>
+    </div>
+
+	<div class="ibox notification-accepted" style="margin-top: 370px !important">
+		<div class="ibox-content" style="padding: 0px">
+
+			<div class="notification-accepted-container">
+
+				<div class="notification-info book-service-info clearfix">
+					<div style="float: left;width: 28px;text-align: center;"><i class="fa fa-plus-square notification-accepted-icons"></i></div>
+					<div style="margin-left: 40px" class="notification-accepted-title book-service-text">Your Selected Services</div>
+				</div>
+
+				<div class="notification-info book-service-info clearfix">
+					<div style="float: left;width: 28px;text-align: center;">&nbsp;</div>
+					<div style="margin-left: 40px">
+						<div class="bg-dark-red book-service-circle" id="service-1" style="float: left;margin-right: 10px">
+							<div class="book-service-circle-selected"></div>
+							<div class="book-service-circle-check fa fa-check"></div>
+							Hoist<br />Transfer
+						</div>
+						<div class="bg-light-green book-service-circle" id="service-2" style="float: left;margin-right: 10px">
+							<div class="book-service-circle-selected"></div>
+							<div class="book-service-circle-check fa fa-check"></div>
+							Meal<br />Preparation
+						</div>
+						<div class="bg-light-blue book-service-circle" id="service-3" style="float: left;margin-right: 10px">
+							<div class="book-service-circle-selected"></div>
+							<div class="book-service-circle-check fa fa-check"></div>
+							Medication<br />Prompt
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

@@ -1,0 +1,92 @@
+<template name="accounts">
+	<div class="row  border-bottom white-bg dashboard-header">
+		<h2>Accounts</h2>
+	</div>
+	<div class="wrapper wrapper-content animated fadeInRight">
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="ibox float-e-margins">
+					<div class="ibox-title">
+						<span class="label label-success pull-right"></span>
+						<h5>Amount Owing</h5>
+					</div>
+					<div class="ibox-content">
+						<h1 class="no-margins">$40 886,200</h1>
+
+						<div class="stat-percent font-bold text-success"><i class="fa fa-bolt"></i></div>
+						<small></small>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <span class="label label-info pull-right"></span>
+                        <h5>Due Date</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h1 class="no-margins">Mar-30-2016</h1>
+
+                        <div class="stat-percent font-bold text-info"><i class="fa fa-level-up"></i></div>
+                        <small></small>
+                    </div>
+                </div>
+            </div>
+		</div>
+
+		<div class="row">
+            <div class="col-sm-12">
+                <div style="margin: 10px 0px">
+                    <a class="btn btn-sm btn-blue m-t-n-xs" href="#"><strong>View Invoice</strong></a>
+                    <a class="btn btn-sm btn-blue m-t-n-xs" href="#"><strong>Pay Now</strong></a>
+                </div>
+            </div>
+			<div class="col-sm-12">
+				<div class="ibox float-e-margins">                    
+                    <div class="ibox-content">
+                        <input type="text" class="form-control input-sm m-b-xs" id="filter"
+                               placeholder="Search for an invoice">
+
+                        <table class="footable table table-stripped text-center" data-page-size="8" data-filter=#filter>
+                            <thead>
+                            <tr>
+                                <th class="text-center">Invoice #</th>
+                                <th class="text-center">Amount</th>
+                                <th class="text-center">Status</th>
+                                <th class="text-center" data-hide="phone,tablet">Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            	<tr class="trAccount" id="trAccount1">
+                            		<td>1</td>
+                            		<td>$300</td>
+                            		<td>Current</td>
+                            		<td class="text-center">
+                                        <a class="action-link" href="/accountView/1"><span class="fa fa-eye light-blue"></span></a>
+                                        <a class="action-link" href="#"><span class="fa fa-usd light-blue"></span></a>
+                                    </td>
+                            	</tr>
+                            	<tr class="trAccount" id="trAccount2">
+                            		<td>2</td>
+                            		<td>$700</td>
+                            		<td>Overdue</td>
+                            		<td class="text-center">
+                                        <a class="action-link" href="/accountView/2"><span class="fa fa-eye light-blue"></span></a>
+                                        <a class="action-link" href="#"><span class="fa fa-usd light-blue"></span></a>
+                                    </td>
+                            	</tr>
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <td colspan="4">
+                                    <ul class="pagination pull-right"></ul>
+                                </td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+</template>

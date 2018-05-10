@@ -1,0 +1,390 @@
+@import "globals/variables.import.less";
+
+#page-wrapper {
+	overflow-x: hidden !important;	
+}
+
+.error-message {
+	display: none;
+}
+
+.btn-red {
+	background-color: @light-red !important;
+	border-color: @light-red !important;
+	color: #FFF !important;
+
+	&:hover {
+		background-color: @dark-red !important;
+		border-color: @dark-red !important;
+	}
+}
+
+.btn-blue {
+	background-color: @light-blue !important;
+	border-color: @light-blue !important;
+	color: #FFF !important;
+}
+
+.bg-dark-red {
+	background-color: @dark-red !important;
+	border-color: @dark-red !important;
+	color: #FFF !important;
+}
+
+.bg-dark-orange {
+	background-color: @dark-orange !important;
+	border-color: @dark-orange !important;
+	color: #FFF !important;
+}
+
+.bg-light-green {
+	background-color: @light-green !important;
+	border-color: @light-green !important;
+	color: #FFF !important;
+}
+
+.bg-light-blue {
+	background-color: @light-blue !important;
+	border-color: @light-blue !important;
+	color: #FFF !important;
+}
+
+.bg-light-red {
+	background-color: @light-red !important;
+	border-color: @light-red !important;
+	color: #FFF !important;
+}
+
+.light-blue {
+	color: @light-blue !important;
+}
+
+.dark-red {
+	color: @dark-red !important;
+}
+
+#wrapper {
+	margin-top: 60px !important;
+}
+
+
+
+.action-link {
+	margin-right: 3px;
+}
+
+.normal-link {
+	color: #676a6c !important;
+	padding: 0px !important;
+}
+
+#isAgree {
+	margin-right: 10px;
+}
+
+.service-required-checkbox {
+	margin-top: 7px;
+	margin-right: 10px;
+}
+
+.notification-list-container {
+	
+	.mail-box-header {
+		margin-bottom: 20px;
+	}
+}
+
+.notification-item {
+	padding: 24px 56px;
+	cursor: pointer;
+
+	img {
+		border-radius: 32px;
+		width: 64px;
+	}
+
+	.notification-name {
+		font-size: 18px;
+		color: #333;
+		padding-top: 5px;
+	}
+
+	.notification-type {
+		color: #999;
+	}
+
+	.notification-date {
+		font-size: 14px;
+		color: #333;
+		padding-top: 2px;
+		float: right;
+		padding-top: 5px;
+	}
+}
+
+.notification-accepted {
+	position: relative;
+	margin: 170px 35px 0px !important;
+	background-color: #FFF;
+}
+
+.map-container {
+	width: 100%;
+	height: 350px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.notification-accepted-container {
+	padding: 15px 0px;
+
+	.notification-info {
+		margin: 20px 56px 20px 154px;
+		.notification-accepted-icons {
+			font-size: 26px;
+			color: #000;
+		}
+		.notification-accepted-title {
+			line-height: 26px;
+			font-weight: 700;
+		}
+	}
+
+	.notification-type {		
+		width: 100px;
+		height: 100px;
+		margin-right: 15px;
+		text-align: center;
+		border-radius: 50px;
+		padding: 32px 0px;
+		display: inline-block;
+	}
+
+	.notification-language {
+		border-radius: 15px;
+		width: 80px;
+		text-color: #FFF;
+		text-align: center;
+		display: inline-block;
+	}
+}
+
+.book-service-circle {
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+	padding: 22px 0px;
+	text-align: center;	
+	margin: auto;
+	margin-bottom: 15px;
+	cursor: pointer;
+	position: relative;
+}
+
+.book-service-circle-selected {
+	background-color: #000;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	opacity: 0.3;
+	border-radius: 40px;
+	display: none;
+}
+
+.book-service-circle-check {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	color: #FFF;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 25px;
+	display: none;
+}
+
+.book-service-text {
+	font-weight: 400 !important;
+}
+
+.book-service-date-container {
+	position: absolute;
+	left: 0px;
+	padding: 15px;
+	right: 0px;
+	z-index: 999;
+	top: 0px;
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
+	background-color:#FFF;
+	text-align: center;
+
+}
+
+.care-giver-photo {
+	position: absolute;
+	left: 20px;
+	top: -50px;
+
+	img {
+		height: 100px;
+		border-radius: 50px;
+	}
+}
+
+.btn-cancel-appointment {
+	color: @dark-red !important;
+	padding: 10px;
+	text-align: center;	
+	background-color: #FFF;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	cursor: pointer;
+}
+
+.btn-book-service-search {
+	margin-top: 20px;
+	margin-bottom: 50px;
+	color: #FFF;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.btn-running-okay {
+	text-align: center;
+	color: #FFF;
+	height: 60px;
+	line-height: 60px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	cursor: pointer;
+}
+
+.btn-find-new-no {
+	text-align: center;
+	color: @light-blue;
+	height: 60px;
+	line-height: 60px;
+	border-bottom-left-radius: 4px;
+	cursor: pointer;
+	float: left;
+	width: 50%;
+	background-color: @gray;
+}
+
+.btn-find-new-yes {
+	text-align: center;
+	color: #FFF;
+	height: 60px;
+	line-height: 60px;
+	border-bottom-right-radius: 4px;
+	cursor: pointer;
+	float: left;
+	width: 50%;
+}
+
+.care-giver-right-icon {
+	color: @light-blue;
+}
+
+.navbar-static-top {
+	height: 61px !important;
+	z-index: 9999 !important;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	position: fixed;
+}
+
+.nav-icon-link {
+	color: #333;
+	text-decoration: none;
+	margin-right: 5px;
+}
+
+.dashboard-header {
+	border: 1px solid #EEE !important;
+
+	h2 {
+		line-height: 38px !important;
+	}
+}
+
+#side-menu {
+	position: fixed;
+}
+@media (max-width: 768px) {
+	.book-service-info {
+		margin-left: 10px !important;
+		margin-right: 10px !important;
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 450px) {
+	.notification-accepted-container {
+
+		.notification-type {
+			width: 80px;
+			height: 80px;
+			padding: 22px 0px;
+			font-size: 12px;
+			margin-bottom: 10px;
+			font-size: 12px;
+		}
+	}
+
+	.notification-accepted {
+		margin: 15px !important;
+	}
+
+	.notification-list-container {
+		padding-left: 0px !important;
+		padding-rigth: 0px !important;
+
+		.col-lg-8 {
+			padding: 0px !important;
+		}
+
+		.animated {
+			padding: 0px !important;
+		}
+	}
+
+	.notification-accepted-icons {
+		font-size: 13px !important;
+	}
+
+	.notification-accepted-title {
+		font-size: 12px;
+		line-height: 16px !important;
+	}
+
+	.notification-info {
+		margin-left: 10px !important;
+		margin-right: 10px !important;
+		font-size: 14px;
+	}
+
+	.notification-item {
+		padding-left: 10px;
+		padding-right: 10px;
+		.notification-name {
+			font-size: 14px !important;
+		}
+
+		.col-xs-2 {
+			padding-right: 0px !important;
+		}
+
+		.col-xs-6 {
+			padding-right: 0px !important;
+		}
+	}
+}

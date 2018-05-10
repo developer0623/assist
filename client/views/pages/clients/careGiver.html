@@ -1,0 +1,80 @@
+<template name="careGiver">
+	<div class="row  border-bottom white-bg dashboard-header">
+        <h2><a class="nav-icon-link" href="{{pathFor route='searchCareGiver'}}"><span class="fa fa-arrow-left"></span></a>Anna Connolly</h2>
+    </div>
+    <div class="map-container">
+		{{> googleMap name="exampleMap" options=exampleMapOptions}}
+	</div>
+
+	<div class="wrapper wrapper-content animated fadeInRight notification-accepted-container" style="position: relative">
+		<div class="care-giver-photo"><img src="/img/a1.jpg" /></div>
+
+		<div class="row" style="margin-top: 60px">
+			<div class="col-sm-9 col-xs-6">
+				<h3>Anna Connolly</h3>
+				
+			</div>
+			<div class="col-sm-3 col-xs-6 text-right care-giver-right-icon">
+				<span class="fa fa-heart-o"></span>
+				<span class="fa fa-server"></span>
+			</div>
+		</div>
+
+		<div class="row" style="margin-top: 15px">
+			<div class="col-sm-12">
+				<div>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star" style="color: #CCC"></span>
+					<span class="fa fa-star" style="color: #CCC"></span>
+					<span>15 reviews, 23 services</span>
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="row" style="margin-top: 15px">
+			<div class="col-xs-1"><i class="fa fa-plus-square"></i></div>
+			<div class="col-xs-11">Services Provided</div>
+		</div>
+
+		<div class="row" style="margin-top: 15px">
+			<div class="col-xs-4 text-center">
+				<div class="notification-type bg-dark-red">Hoist<br />Transfer</div>
+			</div>
+			<div class="col-xs-4 text-center">
+				<div class="notification-type bg-light-green">Meal<br />Preparation</div>
+			</div>
+			<div class="col-xs-4 text-center">
+				<div class="notification-type bg-light-blue">Medication<br />Prompt</div>
+			</div>
+		</div>
+
+		<div class="row" style="margin-top: 15px">
+			<div class="col-xs-1"><span class="fa fa-check-circle"></span></div>
+			<div class="col-xs-11">
+				<span class="notification-language bg-light-blue">Own vehicle</span>
+			</div>
+		</div>
+
+		<div class="row" style="margin-top: 15px">
+			<div class="col-xs-1"><span class="fa fa-support"></span></div>
+			<div class="col-xs-11">
+				<span class="notification-language bg-light-blue">English</span>
+				<span class="notification-language bg-light-blue">Spanish</span>
+			</div>
+		</div>
+
+		<div class="row" style="margin-top: 15px">
+			<div class="col-xs-11 col-xs-offset-1">
+				<span>Lorep ipsum dolor sit mewpi  awiwe riuap apiru a awruiaw raiuwfhawi apw auwfpaw fioa riau apwir</span>
+			</div>
+		</div>
+
+		<div class="row" style="margin-top: 15px;margin-bottom: 15px">
+			<div class="col-xs-12"><button class="btn btn-block bg-light-blue text-center">BOOK</button></div>
+		</div>
+
+	</div>
+</template>

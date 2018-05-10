@@ -1,0 +1,377 @@
+<template name="internal">
+    <div class="row  border-bottom white-bg dashboard-header">
+        <h2>Dashboard for internal use</h2>
+    </div>
+    <div class="wrapper wrapper-content animated fadeInRight">
+		<div class="row">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        <div>
+                            <span class="pull-right text-right">
+                            <small>Average value of sales in the past month in: <strong>United
+                                states</strong></small>
+                                <br/>
+                                All sales: 162,862
+                            </span>
+
+                            <h1 class="m-b-xs">$ 50,992</h1>
+
+                            <h3 class="font-bold no-margins">
+                                Half-year revenue margin
+                            </h3>
+                            <small>Sales marketing.</small>
+                        </div>
+
+                        <div>
+                            <canvas id="lineChart" height="70"></canvas>
+                        </div>
+
+                        <div class="m-t-md">
+                            <small class="pull-right">
+                                <i class="fa fa-clock-o"> </i>
+                                Update on 16.07.2015
+                            </small>
+                            <small>
+                                <strong>Analysis of sales:</strong> The value has been changed over time, and last month
+                                reached a level over $50,000.
+                            </small>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <span class="label label-success pull-right">Monthly</span>
+                        <h5>Income</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h1 class="no-margins">$112,657</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <span class="label label-info pull-right">Monthly</span>
+                        <h5>Hours booked</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h1 class="no-margins">2,853</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <span class="label label-info pull-right">Monthly</span>
+                        <h5>Bookings</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h1 class="no-margins">947</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <span class="label label-info pull-right">Monthly</span>
+                        <h5>Bookings per client</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h1 class="no-margins">1.13</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <span class="label label-info pull-right">Monthly</span>
+                        <h5>Available hours per care giver</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h1 class="no-margins">28.75</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <span class="label label-warning pull-right">Data has changed</span>
+                        <h5>User activity</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <small class="stats-label">Pages / Visit</small>
+                                <h4>236 321.80</h4>
+                            </div>
+
+                            <div class="col-xs-4">
+                                <small class="stats-label">% New Visits</small>
+                                <h4>46.11%</h4>
+                            </div>
+                            <div class="col-xs-4">
+                                <small class="stats-label">This week</small>
+                                <h4>432.021</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <small class="stats-label">Pages / Visit</small>
+                                <h4>643 321.10</h4>
+                            </div>
+
+                            <div class="col-xs-4">
+                                <small class="stats-label">% New Visits</small>
+                                <h4>92.43%</h4>
+                            </div>
+                            <div class="col-xs-4">
+                                <small class="stats-label">Last week</small>
+                                <h4>564.554</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <small class="stats-label">Pages / Visit</small>
+                                <h4>436 547.20</h4>
+                            </div>
+
+                            <div class="col-xs-4">
+                                <small class="stats-label">% New Visits</small>
+                                <h4>150.23%</h4>
+                            </div>
+                            <div class="col-xs-4">
+                                <small class="stats-label">Last month</small>
+                                <h4>124.990</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+			<div class="col-sm-12">
+				<div class="ibox float-e-margins">
+                    <div class="ibox-title">
+
+                        <h5>Top Corporate Clients</h5>
+
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#">Config option 1</a>
+                                </li>
+                                <li><a href="#">Config option 2</a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+
+                        <input type="text" class="form-control input-sm m-b-xs" id="filter" placeholder="Search in table">
+
+                        <table class="footable table table-stripped" data-page-size="8" data-filter=#filter>
+                            <thead>
+                            <tr>
+                                <th data-hide="phone">Ranking</th>
+                                <th>Organisation name</th>
+                                <th>Contact name</th>
+                                <th>Hours booked</th>
+                                <th># of bookings</th>
+                                <th>Hours per booking</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="gradeX trClient">
+                                    <td>1</td>
+                                    <td>Org 1</td>
+                                    <td>Name</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gradeX trClient">
+                                    <td>2</td>
+                                    <td>Org 2</td>
+                                    <td>Name</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gradeX trClient">
+                                    <td>3</td>
+                                    <td>Org 3</td>
+                                    <td>Name</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gradeX trClient">
+                                    <td>4</td>
+                                    <td>Org 4</td>
+                                    <td>Name</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gradeX trClient">
+                                    <td>5</td>
+                                    <td>Org 5</td>
+                                    <td>Name</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gradeX trClient">
+                                    <td>6</td>
+                                    <td>Org 6</td>
+                                    <td>Name</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gradeX trClient">
+                                    <td>7</td>
+                                    <td>Org 7</td>
+                                    <td>Name</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gradeX trClient">
+                                    <td>8</td>
+                                    <td>Org 8</td>
+                                    <td>Name</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gradeX trClient">
+                                    <td>9</td>
+                                    <td>Org 9</td>
+                                    <td>Name</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gradeX trClient">
+                                    <td>10</td>
+                                    <td>Org 10</td>
+                                    <td>Name</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gradeX trClient">
+                                    <td>11</td>
+                                    <td>Org 11</td>
+                                    <td>Name</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gradeX trClient">
+                                    <td>12</td>
+                                    <td>Org 12</td>
+                                    <td>Name</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gradeX trClient">
+                                    <td>13</td>
+                                    <td>Org 13</td>
+                                    <td>Name</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gradeX trClient">
+                                    <td>14</td>
+                                    <td>Org 14</td>
+                                    <td>Name</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gradeX trClient">
+                                    <td>15</td>
+                                    <td>Org 15</td>
+                                    <td>Name</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gradeX trClient">
+                                    <td>16</td>
+                                    <td>Org 16</td>
+                                    <td>Name</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gradeX trClient">
+                                    <td>17</td>
+                                    <td>Org 17</td>
+                                    <td>Name</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gradeX trClient">
+                                    <td>18</td>
+                                    <td>Org 18</td>
+                                    <td>Name</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gradeX trClient">
+                                    <td>19</td>
+                                    <td>Org 19</td>
+                                    <td>Name</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>15</td>
+                                </tr>
+                                <tr class="gradeX trClient">
+                                    <td>20</td>
+                                    <td>Org 20</td>
+                                    <td>Name</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>15</td>
+                                </tr>
+
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <td colspan="7">
+                                    <ul class="pagination pull-right"></ul>
+                                </td>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</template>
